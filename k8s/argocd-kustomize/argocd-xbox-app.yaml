@@ -9,8 +9,8 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    repoURL: https://github.com/raisreis/playground-argocd-helm-example.git
-    path: k8s/argocd-helm/xbox
+    repoURL: https://github.com/raisreis/playground-argocd-kustomize-example.git
+    path: k8s/argocd-kustomize/xbox
     targetRevision: main
   syncPolicy:
     automated: {}

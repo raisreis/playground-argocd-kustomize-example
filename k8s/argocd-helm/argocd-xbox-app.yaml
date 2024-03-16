@@ -10,7 +10,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/raisreis/playground-argocd-helm-example.git
-    path: k8s/argocd-helm
+    path: k8s/argocd-helm/xbox
     targetRevision: main
   syncPolicy:
     automated: {}

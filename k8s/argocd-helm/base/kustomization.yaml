@@ -1,0 +1,4 @@
+namespace: xbox
+resources:
+- xbox-svc.yaml
+- xbox-deployment.yaml

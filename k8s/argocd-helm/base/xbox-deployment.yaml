@@ -1,0 +1,29 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: xbox
+  name: xbox
+  namespace: xbox
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: xbox
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: xbox
+    spec:
+      containers:
+      - image: xbox/pyboxapp:v1.0.0
+        imagePullPolicy: IfNotPresent
+        name: xbox
+        env:
+        - name: COLOR
+          value: "white"
+        resources: {}
+---
